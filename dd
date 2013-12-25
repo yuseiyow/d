@@ -1,0 +1,30 @@
+var user=prompt("You are on a quest to defeat the elder dragon.Are you going RETREAT,CONTINUE with your conquest or REST? ").toLowerCase();
+switch(user)
+{
+    case "retreat":
+        var stamina=prompt("Do you have insane amount of stamina left?").toLowerCase();
+        var agility=prompt("Do you possess high agility skill from training?").toLowerCase();
+        if(stamina==="yes" && agility==="yes")
+        console.log("You have successfully retreated far away from the immninent obsecure threats!");
+        else
+       console.log("Too late to retreat.Dragon have awakened from the abyss and prepare to face death");
+        break;
+    case "continue":
+        var fatique=prompt("Do you feel like you are overwhelmed by fatiqueness and feel lethargic?").toLowerCase();
+        var weak=prompt("Are you feeling weak and hungry due to the long journey?").toLowerCase();
+        if(fatique==="no" || weak==="no")//yes yes means you fail completely
+        console.log("You carry on your journey...Eventually50 yrs later,your sons/daughters continue your legacy as the dragon slayer that you have forged 50 years ago!");
+        else
+        console.log("You brought upon your own death when you knew your limitation would severely impede/hinder your performance during the battle with the dragon!");
+        break;
+    case "rest":
+        var nap=prompt("Do you really take long hours of nap?").toLowerCase();
+        var exhausted=prompt("Are you really feeling not exhausted?").toLowerCase();
+        if(nap==="no" || exhausted==="no")//yes yes means you fail completely
+        console.log("You feel recharged and the outcome of the battle is decided...You won with full stamina and rigurous hours of training each day");
+        else
+        console.log("You are a fool...Thus,gambling with fate will only lead to ramifications like losing your limb!!");
+        break;
+        default:
+        console.log("Go home and play with your swiss roll pervert if you are not interested!");
+}
